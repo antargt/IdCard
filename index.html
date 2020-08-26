@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
-        <title></title>
+        <title>Create ID Card</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="style.css">
     </head>
-    <div id="idCard">
+    <body>
+        <h1>Let's Create an ID card!</h1>
+	
+	    <form>
+		    <label for="firstName" name="idLabel">First Name:</label><br>
+		    <input id="fname" type="text" placeholder="First Name"><br>
+	
+		    <label for="lName" name="idLabel">Last Name:</label><br>
+		    <input id="lname" type="text" placeholder="Last Name"><br>
+	
+		    <label for="age" name="idLabel">Age:</label><br>
+		    <input id="age" type="number" placeholder="Age" min="0" max="105"><br>
+	
+		    <label for="telephone" name="idLabel">Phone Number:</label><br>
+		    <input id="telephone" type="tel" placeholder="Phone Number" pattern="\d{3}[?:""\-]\d{3}[""\-]\d{4}"><br>
+ 	
+		    <label for="address" name="idLabel">Address:</label><br>
+		    <input id="address" type="text" placeholder="Address"><br>
+	
+		    <input type="submit" value="Get ID card" onclick="idCard()">
+	    </form>
+      	
 
-        <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+	    <div id="idCard">
+	        <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
 
-        <p id="postFullName"></p>
-
-        <p id="postAge"></p>
-
-        <p id="postPhoneNumber"></p>
-
-        <p id="postAddress"></p>
-
-    </div>
-   
+	        <p id="postFullName"></p>
+	        <p id="postAge"></p>
+	        <p id="postPhoneNumber"></p>
+		    <p id="postAddress"></p>
+	    </div>
+	    
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
