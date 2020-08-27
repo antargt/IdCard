@@ -1,3 +1,17 @@
+body {
+    background-color: teal;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+form {
+
+    font-weight: bolder;
+  
+}
+
+
 img {
    
     width: 90px;
@@ -6,15 +20,44 @@ img {
     
     float: left;
     
-    }
+}
+
     
-    #idCard {
+#idCard {
+    
+    margin: 5em auto;
     
     border: 5px solid black;
-	border-radius: 1.5em;
     
+    border-radius: 1.5em;
+    
+    background-color: salmon;
+
     height: 14em;
     
     width: 25em;
+
+    font-family: 'Balsamiq Sans', cursive, sans serif;
     
-    }
+}
+
+#postFullName {
+
+   font-size: 30px;
+   margin: 27px auto;
+   
+}
+
+.idInfoLeftAlign {
+
+   position: absolute;
+   padding: 0.5em 0.5em;
+   
+  
+}
+
+.idLabel{
+
+    margin: auto;
+    border-radius: 0.4em;
+}
