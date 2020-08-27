@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Create ID Card</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Let's Create an ID card!</h1>
+  <head>
+    <title>Create ID Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap">
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
 	
-	    <form>
-		    <label for="firstName" name="idLabel">First Name:</label><br>
-		    <input id="fname" type="text" placeholder="First Name"><br>
+	  <h1>Let's Create an ID card!</h1>
 	
-		    <label for="lName" name="idLabel">Last Name:</label><br>
-		    <input id="lname" type="text" placeholder="Last Name"><br>
+		<form >
+		  <label for="fname" class="idLabel">First Name:</label><br>
+		  <input id="fname" class="idLabel" type="text" placeholder="First Name"><br>
 	
-		    <label for="age" name="idLabel">Age:</label><br>
-		    <input id="age" type="number" placeholder="Age" min="0" max="105"><br>
+		  <label for="lname" class="idLabel">Last Name:</label><br>
+		  <input id="lname" class="idLabel" type="text" placeholder="Last Name"><br>
 	
-		    <label for="telephone" name="idLabel">Phone Number:</label><br>
-		    <input id="telephone" type="tel" placeholder="Phone Number" pattern="\d{3}[?:""\-]\d{3}[""\-]\d{4}"><br>
+		  <label for="lname" class="idLabel">Age:</label><br>
+		  <input id="age" class="idLabel" type="number" placeholder="Age" min="0" max="105"><br>
+	
+    		  <label for="lname" class="idLabel">Phone Number:</label><br>
+		  <input id="telephone" class="idLabel" type="tel" placeholder="Phone Number"><br>
  	
-		    <label for="address" name="idLabel">Address:</label><br>
-		    <input id="address" type="text" placeholder="Address"><br>
+  	          <label for="lname" class="idLabel">Address:</label><br>
+	  	  <input id="address" class="idLabel" type="text" placeholder="Address"><br>
 	
-		    <input type="submit" value="Get ID card" onclick="idCard()">
-	    </form>
+		  <input type="button" value="Get ID card!" onclick="idCard()">
+    </form>
       	
 
 	    <div id="idCard">
-	        <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+            <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
 
-	        <p id="postFullName"></p>
-	        <p id="postAge"></p>
-	        <p id="postPhoneNumber"></p>
-		<p id="postAddress"></p>
-	    </div>
-	    
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+	    <p id="postFullName"></p>
+	    <p class="idInfoLeftAlign" id="postAge"></p><br>
+	    <p class="idInfoLeftAlign" id="postPhoneNumber"></p><br>
+	    <p class="idInfoLeftAlign" id="postAddress"></p>
+    </div>
+	  
+	  <script type="text/javascript" src="script.js"></script>
+  
+  </body>
 </html>
