@@ -1,16 +1,21 @@
 body {
     background-color: teal;
     margin: auto;
-    width: 50%;
     text-align: center;
 }
 
 form {
 
     font-weight: bolder;
-  
+   
 }
 
+#getID {
+
+   cursor: pointer;
+   margin: 1em 0em;
+
+}
 
 img {
    
@@ -37,27 +42,52 @@ img {
     
     width: 25em;
 
-    font-family: 'Balsamiq Sans', cursive, sans serif;
+    font-family: 'Balsamiq Sans', cursive;
     
 }
 
 #postFullName {
 
+   position: relative;
+   top: 0.9em;
+   display: inline;
    font-size: 30px;
-   margin: 27px auto;
+   margin: 27px 0px 0px 0px;
    
 }
 
-.idInfoLeftAlign {
-
-   position: absolute;
-   padding: 0.5em 0.5em;
+#postAge {
    
-  
+   position: relative;
+   text-align: left;
+   top: 3.1em;
+   left: -4.9em;
+   
+
 }
+
+#postPhoneNumber {
+   
+   position: relative;
+   text-align: left;
+   left: 0.67em; 
+   top: 1.0em;  
+
+}
+
+#postAddress {
+   
+   position: relative;
+   text-align: left;
+   left: 0.67em;
+   top: -1.2em;   
+
+}
+
 
 .idLabel{
 
-    margin: auto;
+    margin: 0.2em;
     border-radius: 0.4em;
+    padding: 0.15em 0.15em 0.15em 0.3em;
 }
